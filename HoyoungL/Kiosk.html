@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>동의과학대 키오스크</title>
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------css 라이브러리------------------------------- -->
+  <link rel="stylesheet" href="Normalize.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ----------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="Menu.css">
+  <link rel="stylesheet" href="IconTab.css">
+  <link rel="stylesheet" href="DarkMode.css">
+  <link rel="stylesheet" href="CartNButton.css">
+  <link rel="stylesheet" href="LoginForm.css">
+  <link rel="stylesheet" href="Submit.css">
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- --------------------------js 라이브러리--------------------------------- -->
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ----------------------------------------------------------------------- -->
+</head>
+<body data-bs-theme="light">
+		<div class="anim_menu">
+			<div class="anim_menu-icon-1"></div>
+			<div class="anim_menu-icon-2"></div>
+			<div class="anim_menu-list-box">
+				<a href="#darkmode" class="icon-link"
+				id="flexSwitchCheckChecked"
+			checked
+			onclick="darkModeEV()"><i class="fa fa-moon-o"></i></a>
+				<a href="#translate" class="icon-link" data-bs-toggle="modal" data-bs-target="#translationModal"><i class="fa fa-globe"></i></a>
+				<a href="#suuuiiiiiiiii" class="icon-link"><i class="fa fa-user"></i></a>
+			</div>
+		</div>
+		  <!-- ----------------------------------------------------------------------- -->
+		  <!-- ----------------------------------------------------------------------- -->
+		  <!-- <a data-en="" data-vt="" data-ja="" data-ko=""></a> -->
+		  <!-- ----------------------------------------------------------------------- -->
+		  <!-- ----------------------------------------------------------------------- -->
+  <section id="our_menu" class="pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page_title text-center mb-4">
+            <h1 data-en="DIT-Student Restaurant" data-vt="DIT-Nhà ăn sinh viên" data-ja="DIT-学生食堂" data-ko="동의과학대 학생식당">동의과학대 학생식당</h1>
+            <div class="single_line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul class="nav nav-tabs menu_tab mb-4" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="ramen-tab" data-bs-toggle="tab" data-en="Ramen" data-vt="mì ramen" data-ja="ラーメン" data-ko="라면류" href="#ramen" role="tab" >라면류</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="rice-tab" data-bs-toggle="tab" data-en="Rice" data-vt="cơm" data-ja="ご飯" data-ko="밥류" href="#rice" role="tab">밥류</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="donkatsu-tab" data-bs-toggle="tab" data-en="Donkatsu" data-vt="thịt heo cốt lết" data-ja="とんかつ" data-ko="돈까스류" href="#donkatsu" role="tab">돈까스류</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="tab-content col-lg-12" id="myTabContent">
+          <div class="tab-pane fade show active" id="ramen" role="tabpanel" aria-labelledby="ramen-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="normalRamen.jpg" alt="normal-ramen">
+									<div class="menu_content">
+										<h4><a data-en="regular ramen" data-vt="ramen thông thường" data-ja="一般ラーメン" data-ko="일반라면">일반라면</a><b><span>2,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="CheeseRamen.jpg" alt="cheese-ramen">
+									<div class="menu_content">
+										<h4><a data-en="Ramen + Cheese + Rice" data-vt="Ramen + Phô Mai + Cơm" data-ja="ラーメン+チーズ+ご飯" data-ko="라면 + 치즈 + 밥">라면 + 치즈 + 밥</a><b><span>3,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="ManduRamen.jpg" alt="mandu-ramen">
+									<div class="menu_content">
+										<h4><a data-en="Dumpling Ramen + Rice" data-vt="Ramen bánh bao + cơm" data-ja="餃子なら+ご飯" data-ko="만두라면 + 밥">만두라면 + 밥</a><b><span>3,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="rice" role="tabpanel" aria-labelledby="rice-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="1.webp" alt="gogi-dupbap">
+									<div class="menu_content">
+										<h4><a data-en="Jeyuk Rice Bowl" data-vt="Bát cơm Jeyuk" data-ja="育肉丼" data-ko="제육덮밥">제육덮밥</a><b><span>4,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="2.jpg" alt="spam-dupbap">
+									<div class="menu_content">
+										<h4><a data-en="Spam mayo rice bowl" data-vt="Bát cơm mayo thư rác" data-ja="スパムマヨ丼" data-ko="스팸마요덮밥">스팸마요덮밥</a><b><span>4,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="ChickenTokTok.jpg" alt="toktok-dupbap">
+									<div class="menu_content">
+										<h4><a data-en="Chicken toktok rice bowl" data-vt="Bát cơm gà toktok" data-ja="チキントク丼" data-ko="치킨톡톡덮밥">치킨톡톡덮밥</a><b><span>4,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single_menu" style="margin-left: 35px;">
+									<img src="Kimchi.jpg" alt="donkimchiset">
+									<div class="menu_content">
+										<h4><a data-en="Pork Kimchi Stew + Jeyuk" data-vt="Thịt heo hầm kim chi + Jeyuk" data-ja="ドンキムチチゲ+除育" data-ko="돈김치찌개 + 제육">돈김치찌개 + 제육</a><b><span>5,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="donkatsu" role="tabpanel" aria-labelledby="donkatsu-tab">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single_menu">
+									<img src="Donkatsu.webp" alt="normal-donkatsu">
+									<div class="menu_content">
+										<h4><a data-en="Donkatsu" data-vt="thịt heo cốt lết" data-ja="とんかつ" data-ko="돈까스">돈까스</a><b><span>4,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="DonDon.jpg" alt="bibim-donkatsu">
+									<div class="menu_content">
+										<h4><a data-en="Bibim noodles + donkatsu" data-vt="Mì Bibim + Thịt Heo Cốt Lết" data-ja="ビビン麺＋とんかつ" data-ko="비빔국수 + 돈까스">비빔국수 + 돈까스</a><b><span>5,500원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+								<div class="single_menu">
+									<img src="TonTn.jpeg" alt="special-donkatsu">
+									<div class="menu_content">
+										<h4><a data-en="Donkatsu set" data-vt="bộ donkatsu" data-ja="ドンカツセット" data-ko="제돈세트">제돈세트</a><b><span>6,000원</span></b></h4>
+										<p><a data-en="In stock: 30" data-vt="Còn hàng: 30" data-ja="在庫: 30" data-ko="재고 : 30">재고 : 30</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="menu_btn btn btn-danger" data-en="see more" data-vt="xem thêm" data-ja="もっと見る" data-ko="더 보기">더 보기</a>
+					<div class="col-lg-6">
+						<div class="cart-container">
+						  <h2><a data-en="Cart" data-vt="giỏ mua sắm" data-ja="カート" data-ko="주문목록">주문목록</a></h2>
+						  	<ul id="cart" class="list-group">
+							<!-- 주문목록 -->
+						  	</ul>
+						  <p>Total: <span id="total">0원</span></p>
+						  	<div class="modal-footer d-flex">
+						  		<button class="btn btn-danger mt-1" style="margin: 10px" onclick="resetCart()"><a data-en="Empty Cart" data-vt="Giỏ hàng trống" data-ja="カートを空にする" data-ko="장바구니 비우기">장바구니 비우기</a></button>
+						  		<button class="btn btn-danger mt-1" style="margin: 10px;" data-bs-toggle="modal" data-bs-target="#paymentModal"><a data-en="Payment" data-vt="sự chi trả" data-ja="お支払い" data-ko="결제">결제</a></button>
+							</div>
+						</div>
+						
+						<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top: -2%;">
+							  <div class="modal-content" style="background-color: rgba(0, 0, 0, 0); border: none;">
+								<div class="modal-header" style="border: none;">
+								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								  <p id="choosen-paymenttype">Credit Card</p>
+								  <ul class="payment-types list-unstyled">
+										<li class="paymenttype pp unselected-left">
+											<div class="box">
+											<header>
+											<div class="card" id="pp-card">
+												<div class="flipper">
+												<div class="front">
+													<div class="shine"></div>
+													<div class="shadow"></div>
+													<div class="card-bg">
+													<img src="kakaoPay.jpg" />
+													</div>
+												</div>
+												</div>
+											</div>
+											</header>
+											<form>
+												<div class="form-content">
+													<img src="QrCode.jpg" alt="QR Code" style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+													<p style="text-align: center;"><strong>위 QR코드를 스캔해 카카오페이로 결제하세요</strong></p>
+												</div>
+											</form>
+											</div>
+										</li>
+										<li class="paymenttype selected cc">
+											<div class="box">
+											<header>
+											<div class="card" id="cc-card">
+												<div class="flipper">
+												<div class="front">
+													<div class="shine"></div>
+													<div class="shadow"></div>
+													<div class="card-bg" style="background-color: transparent;">
+													<img src="card-front.png" />
+													</div>
+													<div class="card-content">
+													<div class="credit-card-type"></div>
+													<div class="card-number">
+														<span>1234 1234 1234 1234</span>
+														<span>1234 1234 1234 1234</span>
+													</div>
+													<div class="card-holder">
+														<em>Card holder</em>
+														<span>Your Name</span>
+														<span>Your Name</span>
+													</div>
+													<div class="validuntil">
+														<em>Expire</em>
+														<div class="e-month">
+															<span>
+															MM
+															</span>
+															<span>
+															MM
+															</span>
+														</div>
+														<div class="e-divider">
+															<span>
+															/
+															</span>
+															<span>
+															/
+															</span>
+														</div>
+														<div class="e-year">
+															<span>
+															YY
+															</span>
+															<span>
+															YY
+															</span>
+														</div>
+													</div>
+													</div>
+												</div>
+												<div class="back">
+													<div class="shine"></div>
+													<div class="shadow"></div>
+													<div class="card-bg">
+													<img src="card-back.png" />
+													</div>
+													<div class="ccv">
+													<em>CCV Number</em>
+													<strong></strong>
+													</div>
+													<div class="card-content">
+													<div class="card-number">
+														<span>4111 1111 1111 1111</span>
+														<span>4111 1111 1111 1111</span>
+													</div>
+													<div class="card-holder">
+														<span>Your Name</span>
+														<span>Your Name</span>
+													</div>
+													<div class="validuntil">
+														<span>
+														<strong class="e-month">MM</strong> /                 <strong class="e-year">YY</strong>
+														</span>
+														<span>
+														<strong class="e-month">MM</strong> /
+														<strong class="e-year">YY</strong>
+														</span>
+													</div>
+													</div>
+												</div>
+												</div>
+											</div>
+											</header>
+
+											<form>
+											<div class="form-content">
+												<div class="field">
+												<input type="tel" id="cardnumber" maxlength="20" />
+												<span class="focus-bar"></span>
+												<label for="cardnumber">카드번호</label>
+												</div>
+												<div class="field">
+												<input type="text" autocorrect="off" spellcheck="false" id="cardholder" maxlength="25" />
+												<span class="focus-bar"></span>
+												<label for="cardholder">카드명의</label>
+												</div>
+												<div class="field-group">
+												<div class="col-50">
+													<label for="expires-month">유효기간</label>   
+													<div class="field expire-date">
+													<div>
+														<input type="tel" id="expires-month" placeholder="MM" allowed-pattern="[0-9]" maxlength="2">
+														<span class="focus-bar"></span>
+													</div>
+													<div class="divider">/</div>
+													<div>
+														<input type="tel" id="expires-year" placeholder="YY" allowed-pattern="[0-9]" maxlength="2">
+														<span class="focus-bar"></span>
+													</div>
+													</div>
+												</div>
+												<div class="col-50">
+													<div class="field ccv">
+													<input type="tel" id="ccv" autocomplete="off" maxlength="3" />
+													<span class="focus-bar"></span>
+													<label for="ccv">CCV</label>
+													</div>
+												</div>
+												</div>
+												<div class="activate">
+													<span>
+														<svg>
+															<use xlink:href="#circle"></use>
+														</svg>
+														<svg>
+															<use xlink:href="#arrow"></use>
+														</svg>
+														<svg>
+															<use xlink:href="#check"></use>
+														</svg>
+													</span>
+													<ol style="padding: 0; list-style-type: none; text-align: center;">
+														<li>결제</li>
+														<li>진행중..</li>
+														<li>결제완료</li>
+													</ol>
+												</div>
+											</div>
+											</form>
+											</div>
+										</li>
+										<li class="paymenttype ec unselected-right">
+											<div class="box">
+											<header>
+											<div class="card" id="ec-card">
+												<div class="flipper">
+												<div class="front">
+													<div class="shine"></div>
+													<div class="shadow"></div>
+													<div class="card-bg">
+													<img src="cash.png">
+													</div>
+												</div>
+												</div>
+											</div>
+											</header>
+											<form>
+												<div class="form-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+													<p style="margin-bottom: 50px;"><strong>현금결제를 위해 아래 버튼을 눌러주세요</strong></p>
+													<div class="activate">
+														<span>
+															<svg>
+																<use xlink:href="#circle"></use>
+															</svg>
+															<svg>
+																<use xlink:href="#arrow"></use>
+															</svg>
+															<svg>
+																<use xlink:href="#check"></use>
+															</svg>
+														</span>
+														<ol style="padding: 0; list-style-type: none; text-align: center;">
+															<li>결제</li>
+															<li>진행중..</li>
+															<li>결제완료</li>
+														</ol>
+													</div>
+												</div>
+												<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+													<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="circle">
+														<circle cx="8" cy="8" r="7.5"></circle>
+													</symbol>
+													<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="arrow">
+														<path d="M2.7008908,5.37931459 L2.7008908,5.37931459 C2.9224607,5.60207651 3.2826628,5.60304283 3.50542472,5.38147293 C3.52232305,5.36466502 3.53814843,5.34681177 3.55280728,5.32801875 L5.34805194,3.02646954 L5.34805194,10.3480519 C5.34805194,10.7081129 5.63993903,11 6,11 L6,11 C6.36006097,11 6.65194806,10.7081129 6.65194806,10.3480519 L6.65194806,3.02646954 L8.44719272,5.32801875 C8.6404327,5.57575732 8.99791646,5.61993715 9.24565503,5.42669716 C9.26444805,5.41203831 9.28230129,5.39621293 9.2991092,5.37931459 L9.2991092,5.37931459 C9.55605877,5.12098268 9.57132199,4.70855346 9.33416991,4.43193577 L6.75918715,1.42843795 C6.39972025,1.00915046 5.76841509,0.960656296 5.34912761,1.32012319 C5.31030645,1.35340566 5.27409532,1.38961679 5.24081285,1.42843795 L2.66583009,4.43193577 C2.42867801,4.70855346 2.44394123,5.12098268 2.7008908,5.37931459 Z"></path>
+													</symbol>
+													<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="check">
+															<path id="test" d="M4.76499011,6.7673683 L8.2641848,3.26100386 C8.61147835,2.91299871 9.15190114,2.91299871 9.49919469,3.26100386 C9.51164115,3.27347582 9.52370806,3.28637357 9.53537662,3.29967699 C9.83511755,3.64141434 9.81891834,4.17816549 9.49919469,4.49854425 L5.18121271,8.82537365 C4.94885368,9.05820878 4.58112654,9.05820878 4.34876751,8.82537365 L2.50080531,6.97362503 C2.48835885,6.96115307 2.47629194,6.94825532 2.46462338,6.93495189 C2.16488245,6.59321455 2.18108166,6.0564634 2.50080531,5.73608464 C2.84809886,5.3880795 3.38852165,5.3880795 3.7358152,5.73608464 L4.76499011,6.7673683 Z"></path>
+													</symbol>
+												</svg>
+											</form>
+											</div>
+										</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      		</div>
+	  <div class="modal fade" id="translationModal" tabindex="-1" aria-labelledby="translationModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="translationModalLabel">Translation Helper</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <label for="language-select" class="form-label">Choose a language:</label>
+			  <select id="language-select" class="form-select">
+				<option value="en">English</option>
+				<option value="vt">Tiếng Việt</option>
+				<option value="ja">日本語</option>
+				<option value="ko">한국어</option>
+			  </select>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary" onclick="translateText()">Translate</button>
+			  <button type="button" class="btn btn-success" onclick="resetText()">Reset to Original</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+  </section>
+  <script src="menu.js"></script>
+  <script src="translate.js"></script>
+  <script src="darkMode.js"></script>
+  <script src="cart.js"></script>
+  <script src="paymentForm.js"></script>
+</body>
+</html>
